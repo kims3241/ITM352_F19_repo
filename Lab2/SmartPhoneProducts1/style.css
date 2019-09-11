@@ -1,0 +1,38 @@
+body {
+    width: 880px;
+    margin: 0 auto;
+}
+
+p {
+    text-align: center;
+}
+
+p.regular {
+    text-align: center;
+    font: "times";
+    font-size; 14px;
+    font-style: normal;
+}
+
+p.discount {
+    text-align: center;
+    font: "arial";
+    font-size: 14px;
+    font-style: italic;
+}
+
+h1,h2 {
+    text-align: center;
+    color: green;
+}
+
+img {
+    display: block;
+    border: 1px; 
+    border-radius: 0px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 200px;
+    padding: 0px;
+
+}
