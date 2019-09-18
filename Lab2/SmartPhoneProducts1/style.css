@@ -3,6 +3,12 @@ body {
     margin: 0 auto;
 }
 
+body {
+    background-image: url("images/phone_globe.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
 p {
     text-align: center;
 }
@@ -23,7 +29,7 @@ p.discount {
 
 h1,h2 {
     text-align: center;
-    color: green;
+    color: black;
 }
 
 img {
