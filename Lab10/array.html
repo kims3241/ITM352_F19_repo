@@ -1,0 +1,19 @@
+<html>
+    <body>
+        <script>
+
+            var twoDim = [['Bagel', 1.25], ['Donut', 1.50], ['Veggie Slice', 3.25], ['Gyro', 4.00]];
+
+            document.write('<table border = 1>');
+            outStr = "";
+            for(i = 0; i < twoDim.length; i++) {
+                outStr += "<tr>"
+                for(j = 0; j < twoDim[i].length; j++) {
+                outStr += "<td>" + twoDim[i][j] + "</td>"
+                }
+                outStr += "</tr>";
+            } 
+            document.write(outStr);       
+    </script>
+    </body>
+</html>
