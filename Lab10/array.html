@@ -7,11 +7,7 @@
             document.write('<table border = 1>');
             outStr = "";
             for(i = 0; i < twoDim.length; i++) {
-                outStr += "<tr>"
-                for(j = 0; j < twoDim[i].length; j++) {
-                outStr += "<td>" + twoDim[i][j] + "</td>"
-                }
-                outStr += "</tr>";
+                outStr += "<tr>" + "<td>" + twoDim[i]+ "</td>" + "</tr>"
             } 
             document.write(outStr);       
     </script>
