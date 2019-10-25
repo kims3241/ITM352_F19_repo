@@ -1,0 +1,15 @@
+<html>
+    <body>
+        <script>
+            var fav_foods = ["Kalbi", "Ramen", "Rice", "Pho", "Chocopie", "Custard Pie"];
+            fav_foods[1] = "Pizza";
+            fav_foods[6] = "Kimchi";
+
+           document.write('<table border = 1>');
+           for(i = 0; i < fav_foods.length; i++) {
+               document.write('<tr><td>' + fav_foods[i] + '</td></tr>');
+           }
+            document.write('</table>');
+        </script>
+    </body>
+</html>
