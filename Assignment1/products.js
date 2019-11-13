@@ -1,4 +1,4 @@
-products =
+var products =
     [
         {
             "brand": "MSI GTX 1660",
