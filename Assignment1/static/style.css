@@ -4,7 +4,7 @@ body {
 }
 
 body {
-    background-color: darkturquoise;
+    background-color: white;
     background-repeat: no-repeat;
     background-position: center;
     background-size: 100%;
@@ -41,4 +41,8 @@ img {
     margin-right: auto;
     width: 200px;
     padding: 10px;
+}
+table {
+   border: 10px;
+   border-color: black; 
 }

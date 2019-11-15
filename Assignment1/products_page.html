@@ -26,6 +26,33 @@
         document.getElementById(theTextbox.name + '_label').innerHTML = errs.join(", ");
     }
 
+    window.onload = function () {
+        let params = (new URL(document.location)).searchParams; // get the query string which has the form data
+        // form was submitted so check that quantities are valid then redirect to invoice if ok.
+        if (params.has('purchase_submit')) {
+            has_errors = false; // assume quantities are valid from the start
+            total_qty = 0; // need to check if something was selected so we will look if the total > 0
+            for (i = 0; i < products.length; i++) {
+                if (params.has(`quantity${i}`)) {
+                    a_qty = params.get(`quantity${i}`);
+                    // make textboxes sticky in case of invalid data
+                    product_selection_form[`quantity${i}`].value = a_qty;
+                    total_qty += a_qty; 
+                    if(!isNonNegInt(a_qty)) {
+                        has_errors = true; // oops, invalid quantity
+                        checkQuantityTextbox(product_selection_form[`quantity${i}`]); // show where the error is
+                    }
+                }
+            }
+
+    if(has_errors) {
+                alert("Please enter only valid quantities!");
+            } else if(total_qty == 0) { // no quantity selections, just give a general alert
+                alert("Please select some quantities!");
+            } else { // all good to go!
+                window.location = `./invoice.html${document.location.search}`;
+                window.stop;
+
 </script>
 
 <body>
@@ -33,12 +60,12 @@
         <header>
             <h1>Scott's Graphics Card Store</h1>
         </header>
-        <main style="display: flex;flex-direction: row; justify-content: space-around">
-            <div style="border: 5px solid black; display: flex"></div>
-            <script>
-                for (i = 0; i < products.length; i++) //creates a new line for each produt 
-                {
-                    document.write(`
+        <main style="display: flex; flex-flow: row; justify-content: space-evenly">
+            <div style="border: 5px solid black; display: flex">
+                <script>
+                    for (i = 0; i < products.length; i++) //creates a new line for each produt 
+                    {
+                        document.write(`
                                     <section class="item">
                                     <table>
                                     <tr><td>${products[i].brand}</td></tr>
@@ -50,14 +77,17 @@
                                     </table>
                                     </section>
                                 `); //creates the section for the brand, price, and image for each product 
-                }    
-            </script>
+                    }    
+                </script>
+               
+            </div>
         </main>
+        <center><input type="submit" value="Purchase!" name="purchase_submit"></center>
         <footer>
             <h1>
                 Your Place for the greatest GPUs
             </h1>
-            <input type="submit" value="Purchase!" name="purchase_submit">
+               
         </footer>
     </form>
 </body>
