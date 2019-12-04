@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+        let myParams = (new URL(document.location)).searchParams;
+        outStr = "";
+
+        for (i=0; i<products.length; i++){
+            thisParams = "quantities" + i;
+            let qty = myParams.get(thisParam);
+            if (qty !=null){
+                outStr += `<tr><td>${products[i].model}</td>`;
+                outStr += `<tr><td>${qty}</td>`;
+                extended = qty * products[i].price;
+                outStr += `<td>${extended}</td></tr>`;
+                
+            }
+        }
+        </script>
+</body>
+</html>
