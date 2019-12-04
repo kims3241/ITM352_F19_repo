@@ -1,0 +1,22 @@
+{
+    "itm352": {
+        "name": "ITM352",
+        "password": "grader",
+        "email": "itm352@hawaii.edu"
+    },
+    "scawts3": {
+        "name": "scawts3",
+        "password": "123",
+        "email": "1231231@gmail.com"
+    },
+    "scawts1": {
+        "name": "scawts1",
+        "password": "1234",
+        "email": "1231231@gmail.com"
+    },
+    "scawts2": {
+        "name": "scawts2",
+        "password": "123",
+        "email": "1231231@gmail.com"
+    }
+}
