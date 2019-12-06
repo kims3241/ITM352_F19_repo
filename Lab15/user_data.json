@@ -1,0 +1,42 @@
+{
+    "23452345": {
+        "name": "23452345",
+        "password": "2345",
+        "email": "asdfasf@gmail.com"
+    },
+    "dport": {
+        "name": "Dan Port",
+        "password": "portspassword",
+        "email": "dport@hawaii.edu"
+    },
+    "kazman": {
+        "name": "Rick Kazman the 3rd",
+        "password": "kazmanpassword",
+        "email": "kazman@hawaii.edu"
+    },
+    "itm352": {
+        "name": "ITM352",
+        "password": "grader",
+        "email": "itm352@hawaii.edu"
+    },
+    "newuser": {
+        "name": "username",
+        "password": "newpass",
+        "email": "newuser@user.com"
+    },
+    "hatR": {
+        "name": "hatR",
+        "password": "ADS",
+        "email": "asdfasf@gmail.com"
+    },
+    "hat": {
+        "name": "hat",
+        "password": "234",
+        "email": "asdfasf@gmail.com"
+    },
+    "CAR": {
+        "name": "CAR",
+        "password": "123",
+        "email": "asdfasf@gmail.com"
+    }
+}
